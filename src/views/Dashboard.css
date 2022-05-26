@@ -1,0 +1,41 @@
+.cardcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    margin: 60px;
+    text-decoration: none;
+    color: antiquewhite;
+    border: 2px solid antiquewhite;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.active {
+    transition: ease-in;
+    animation-name: select;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+}
+
+.inactive {
+    transition: ease-in;
+    animation-name: deselect;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+}
+@keyframes select {
+    to {
+        background-color: antiquewhite;
+        color: black;
+    }
+}
+
+@keyframes deselect {
+    to {
+        background-color: none;
+        color: antiquewhite
+    }
+}

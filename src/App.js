@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useEffect } from "react";
+import { Route, Switch } from "react-router-dom";
+import Dashboard from "./views/Dashboard";
+import Navbar from "./components/Navbar";
+import About from "./views/About";
+import SelectedTab from "./contexts/SelectedTab";
+import BullyBot from "./components/BullyBot";
+import Products from "./views/Products";
+import Misc from "./views/Misc";
 
 function App() {
+  useEffect(() => {
+    document.title = "Portfolio";
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div className="page">
+        <SelectedTab.Provider value={{}}>
+          <Switch>
+            <Route exact path="/">
+              <Dashboard />
+              <Misc />
+            </Route>
+            <Route exact path="/about">
+              <Dashboard />
+              <About />
+            </Route>
+            <Route exact path="/products">
+              <Dashboard />
+              <Products />
+            </Route>
+          </Switch>
+        </SelectedTab.Provider>
+      </div>
     </div>
   );
 }

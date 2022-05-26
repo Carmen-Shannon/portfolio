@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.headercontainer {
+    height: 45px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: ease-in 0.5s;
+    background-color: black;
+}
+
+.rightcontainer {
+    display: flex;
+}
+
+.link {
+    text-decoration: none;
+    color: antiquewhite;
+    border: 2px solid antiquewhite;
+    padding: 8px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    cursor: default;
+}
+
+.link:hover {
+    animation-name: hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes hover {
+    to {
+        background-color: antiquewhite;
+        color: black;
+    }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+
+
+
