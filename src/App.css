@@ -1,8 +1,12 @@
 .App {
   text-align: center;
-  background: linear-gradient(to bottom, black, darkblue);
   min-height: 105vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  margin: 0px auto;
 }
 
 * {
@@ -16,4 +20,18 @@
 
 h1 {
   color: antiquewhite;
+}
+
+.maincolumn {
+  background-color: #252500;
+  z-index: -1;
+  width: 50%;
+  position: fixed;
+  height: 100%;
+  opacity: 0.5;
+  box-shadow: 0px 0px 80px 14px white;
+}
+
+body {
+  background: linear-gradient(to bottom, black, darkblue);
 }

@@ -15,25 +15,28 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Navbar />
-      <div className="page">
-        <SelectedTab.Provider value={{}}>
-          <Switch>
-            <Route exact path="/">
-              <Dashboard />
-              <Misc />
-            </Route>
-            <Route exact path="/about">
-              <Dashboard />
-              <About />
-            </Route>
-            <Route exact path="/products">
-              <Dashboard />
-              <Products />
-            </Route>
-          </Switch>
-        </SelectedTab.Provider>
+      <div className="background">
+        <Navbar />
+        <div className="page">
+          <SelectedTab.Provider value={{}}>
+            <Switch>
+              <Route exact path="/">
+                <Dashboard />
+                <Misc />
+              </Route>
+              <Route exact path="/about">
+                <Dashboard />
+                <About />
+              </Route>
+              <Route exact path="/products">
+                <Dashboard />
+                <Products />
+              </Route>
+            </Switch>
+          </SelectedTab.Provider>
+        </div>
       </div>
+      <div className="maincolumn"></div>
     </div>
   );
 }
