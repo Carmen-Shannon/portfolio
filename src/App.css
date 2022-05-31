@@ -35,3 +35,12 @@ h1 {
 body {
   background: linear-gradient(to bottom, black, darkblue);
 }
+
+@media (max-width: 700px) {
+  .maincolumn {
+    display: none;
+  }
+  h1 {
+    margin-left: 25px;
+  }
+}

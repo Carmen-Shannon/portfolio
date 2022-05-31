@@ -5,7 +5,6 @@ import Dashboard from "./views/Dashboard";
 import Navbar from "./components/Navbar";
 import About from "./views/About";
 import SelectedTab from "./contexts/SelectedTab";
-import BullyBot from "./components/BullyBot";
 import Products from "./views/Products";
 import Misc from "./views/Misc";
 

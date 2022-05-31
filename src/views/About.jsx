@@ -16,6 +16,13 @@ const About = (props) => {
             sales and finance. I have proficiencies in the following
             technologies:
           </p>
+          <a
+            href="https://github.com/Carmen-Shannon"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <p>My github</p>
+          </a>
           <ul>
             <li>MERN</li>
             <li>MongoDB</li>

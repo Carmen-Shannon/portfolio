@@ -6,12 +6,17 @@ const FootballApi = (props) => {
       <h2 className="heading">NFL API</h2>
       <div className="loader">
         <div className="text">
-          <a href="http://144.172.67.144/athletes" target={"_blank"}>
+          <a
+            href="http://144.172.67.144/athletes"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <p>deployed</p>
           </a>
           <a
             href="https://github.com/Carmen-Shannon/fantasyproject/tree/NFL-API"
             target={"_blank"}
+            rel="noreferrer"
           >
             <p>github</p>
           </a>
@@ -20,7 +25,7 @@ const FootballApi = (props) => {
             deliver most major stats for a player or team in the 2021 season. It
             is made by taking data in the form of CSV files and translating it
             over to Java objects where the data gets 'cleaned' and passed into a
-            persistent databse (MySQL).
+            persistent database (MySQL).
           </p>
           <p>
             The relationships are created and managed in Java between the

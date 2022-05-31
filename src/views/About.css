@@ -75,3 +75,19 @@ ul {
         transform: translateX(0);
     }
 }
+
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: 25px;
+    }
+    .photo {
+        width: 200px;
+        margin: 35px 0px;
+    }
+    .text {
+        font-size: 9px;
+        margin: 0px;
+        width: 150px;
+    }
+}
